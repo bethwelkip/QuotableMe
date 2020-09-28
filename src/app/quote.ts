@@ -1,12 +1,12 @@
 export class Quote {
-    //  describe: boolean;
-    id: number;
-    name: string;
-    quote: string;
-    author: string;
+    describe: boolean;
+    // id: number;
+    // name: string;
+    // quote: string;
+    // author: string;
 
-    //constructor(id: number, name: string, quote: string, author: string) {
-    // this.describe = false;
+    constructor(public id: number, public name: string, public quote: string, public author: string) {
+        this.describe = false;
 
-    //}
+    }
 }
