@@ -3,6 +3,7 @@
         <h1>Quotable Me</h1>
     </div>
     <hr>
+    <hr>
     <div class="row">
         <div class="col-md-3">
             <app-quote-form></app-quote-form>
@@ -13,8 +14,10 @@
                 <ul>
                     <li *ngFor='let quote of quotes; let i = index'>
                         <button (click)='showDetails(i)'>{{quote.quote}}</button>
-                        <app-quote-detail *ngIf='quote.describe' [quote]='quote'></app-quote-detail>
-                        <p *ngIf='quotes.length > 3'>Created On </p>
+                        <app-quote-detail (upVote)='upVote($event, i)' (downVote)='downVote($event, i)'
+                            (quotesDelete)='deleteQuotes($event, i)' *ngIf='quote.describe' [quote]='quote'>
+                        </app-quote-detail>
+                        <p>Created On </p>
                     </li>
                 </ul>
             </div>
