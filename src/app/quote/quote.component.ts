@@ -27,7 +27,24 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].describe = !this.quotes[index].describe;
 
   }
+  deleteQuotes(deletes, index) {
+    if (deletes) {
+      this.quotes.splice(index, 1);
+    }
+  }
+  upVote(upvote, index) {
+    console.log(index);
+    if (upvote) {
 
+
+    }
+  }
+  downVote(downvote, index) {
+    console.log(index);
+    if (downvote) {
+
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
