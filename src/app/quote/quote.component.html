@@ -1,0 +1,24 @@
+<div class=container>
+    <div class=jumbotron>
+        <h1>Quotable Me</h1>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-3">
+            <app-quote-form></app-quote-form>
+        </div>
+
+        <div class="col-md-8">
+            <div class=jumbotron id="quotes">
+                <ul>
+                    <li *ngFor='let quote of quotes'>
+                        {{quote.quote}}
+                        <app-quote-detail [quote]='quote'></app-quote-detail>
+                        <p *ngIf='quotes.length > 3'>Created On </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
