@@ -1,0 +1,20 @@
+.jumbotron{
+   background-color: #01320F; 
+   text-align: center;
+   color: #FA09FF;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+#quotes{
+    background-color: #CBD8B0;
+    color: black;
+
+
+}
+#quotes li{
+    background-color: #C4C4C4;
+    color: black;
+    list-style: none;
+    border: 10px;
+
+}
