@@ -1,10 +1,10 @@
 <p>Author: {{quote.author}}</p>
-<button class="details" id="upvote">
+<button class="details" id="upvote" (click)='quoteUpvote(true)'>
     UPVOTE
 </button>
-<button class="details" id="downvote">
+<button class="details" id="downvote" (click)='quoteDownvote(true)'>
     DOWNVOTE
 </button>
-<button class="details" id="delete">
+<button class="details" id="delete" (click)='quoteDelete(true)'>
     DELETE
 </button>
